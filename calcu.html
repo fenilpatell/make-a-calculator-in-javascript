@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./calcu.css">
+    <script src="./calcu.js"></script>
+    <title>calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <input class="display-box" type="text" id="result" disabled placeholder="0">
+        <div>
+            <button class="gray" onclick="clearScreen()" id="btn" value="0">ac</button>
+            <button class="gray" onclick="delete1()">del</button>
+            <button class="gray" value="%" onclick="display('%')">%</button>
+            <button class="equalbn" value="/" onclick="display('/')">/</button>
+        </div>
+
+        <div>
+            <button value="7" onclick="display('7')">7</button>
+            <button value="8" onclick="display('8')">8</button>
+            <button value="9" onclick="display('9')">9</button>
+            <button class="equalbn" value="*" onclick="display('*')">*</button>
+        </div>
+
+        <div>
+            <button  value="4" onclick="display('4')">4</button>
+            <button value="5" onclick="display('5')">5</button>
+            <button value="6" onclick="display('6')">6</button>
+            <button class="equalbn" value="-" onclick="display('-')">-</button>
+        </div>
+
+        <div>
+            <button value="1" onclick="display('1')">1</button>
+            <button value="2" onclick="display('2')">2</button>
+            <button value="3" onclick="display('3')">3</button>
+            <button class="equalbn" value="+" onclick="display('+')">+</button>
+        </div>
+
+        <div>
+            <button value="00" onclick="display('00')">00</button>
+            <button value="0" onclick="display('0')">0</button>
+            <button value="." onclick="display('.')">.</button>
+            <button class="equalbn" value="=" onclick="calculate()" id="btn">=</button>
+        </div>
+    </div>
+</body>
+</html>
